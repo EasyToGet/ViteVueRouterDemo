@@ -117,6 +117,7 @@ export default {
         .then(res => {
           alert(res.data.message)
           this.loadingStatus.loadingItem = ''
+          this.$refs.userProductModal.qty = 1
           this.$refs.userProductModal.hideModal()
         })
         .catch(err => {
